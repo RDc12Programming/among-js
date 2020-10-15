@@ -8,7 +8,7 @@ server.listen(3000)
 exports.lobbies = {
   "abcdef": {}
 }
-exports.getLobbyByCode = (reqId) => {
+exports.getLobbyByCode = reqId => {
   for(id in exports.lobbies) {
     if (reqId == id) return exports.lobbies.id
   } return -1
